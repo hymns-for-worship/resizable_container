@@ -20,8 +20,8 @@ class _ResizableContainerState extends State<ResizableContainer> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: LayoutBuilder(
+    return Material(
+      child: LayoutBuilder(
         builder: (context, dimens) {
           double minWidth = widget.width;
           final maxWidth = dimens.maxWidth - minWidth;
